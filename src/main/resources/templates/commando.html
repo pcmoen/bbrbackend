@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'" />
+
+<form action = "/advance" method = "post">
+  <input type="submit" name="advance" value="advance" />
+</form>
+<form action = "/retreat" method = "post">
+  <input type="submit" name="retreat" value="retreat" />
+</form>
+<form action = "/shoot" method = "post">
+  <input type="submit" name="shoot" value="shoot" />
+</form>
+<form action = "/pass" method = "post">
+  <input type="submit" name="pass" value="pass" />
+</form>
+<form action = "/rotate-left" method = "post">
+  <input type="submit" name="rotate-left" value="rotate-left" />
+</form>
+<form action = "/rotate-right" method = "post">
+  <input type="submit" name="rotate-right" value="rotate-right" />
+</form>
+
+</body>
+</html>
